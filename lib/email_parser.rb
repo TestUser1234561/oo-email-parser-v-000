@@ -11,7 +11,7 @@ class EmailParser
 
     email = emails.split(", ")
     email.map {|e| e.split(" ")}
-    email.uniq
+    email = email.uniq
 
     @emails = email
 
