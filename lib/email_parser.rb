@@ -10,7 +10,7 @@ class EmailParser
   def initialize(emails)
 
     @emails = emails.split(", ")
-    @emails.each {|e| e.split(" ")}
+    @emails.collect {|e| e.split(" ")}
     @emails = @emails.flatten
 
   end
