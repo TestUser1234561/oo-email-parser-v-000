@@ -11,6 +11,7 @@ class EmailParser
 
     @emails = emails.split(", ")
     @emails.map {|e| e.split(" ")}
+    @emails.uniq
 
   end
 
