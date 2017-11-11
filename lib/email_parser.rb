@@ -9,8 +9,8 @@ class EmailParser
 
   def initialize(emails)
 
-    @emails = emails.split(", ")
-    @emails.map {|e| e.split(" ")}
+    email = emails.split(", ")
+    email.map {|e| e.split(" ")}
     @emails.uniq
 
   end
