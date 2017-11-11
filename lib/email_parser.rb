@@ -11,7 +11,7 @@ class EmailParser
 
     @emails = emails.split(", ")
     @emails.map {|e| e.split(" ")}
-    @emails = @emails.flatten
+    @emails.flatten
 
   end
 
